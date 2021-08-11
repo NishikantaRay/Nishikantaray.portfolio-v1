@@ -1,0 +1,63 @@
+
+<div class="container">
+  <div class="mx-auto mt-5 text-center achieve">
+    <h4>&nbsp;{{ details.name }}</h4>
+  </div>
+  <div class="row">
+    <div class="col-12 col-md-6 col-lg-4 mb-5 pt-5 mb-md-0">
+      <div class="card bg-primary shadow-inset border-light">
+        <div class="card-header p-4">
+          <img
+            src="{{ details.url }}"
+            class="card-img-top rounded"
+            alt="Wood Portrait"
+          />
+        </div>
+      </div>
+      <div class="card-body text-center pt-4">
+        <h3 class="h5 mb-2">{{ details.picname }}</h3>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-2 mb-md-0"></div>
+    <div class="col-12 col-md-6 col-lg-6 mb-5 pt-5 mb-md-0">
+      <div class="row">
+        <div class="col-12 col-md-12">
+          <div class="card bg-primary shadow-inset border-light p-3">
+            <div
+              class="
+                card-header
+                shadow-soft
+                border border-light
+                rounded
+                p-3
+                mb-3
+              "
+            >
+              <p>
+                {{ details.intro }}
+              </p>
+            </div>
+            <div
+              class="card-body shadow-soft border border-light rounded p-2 mb-3"
+            >
+              <ul class="list-group list-group-flush price-list mb-4">
+                <li class="list-group-item border-primary pb-1">
+                  <span class="fas fa-envelope-square"></span
+                  >{{ details.personalmail }}
+                </li>
+                <li class="list-group-item border-primary pb-1">
+                  <span class="fas fa-envelope-square"></span
+                  >{{ details.clgmail }}
+                </li>
+                <li class="list-group-item border-primary pb-1">
+                  <span class="fas fa-phone"></span>{{ details.phone }}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-hobby></app-hobby>

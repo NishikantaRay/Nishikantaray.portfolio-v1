@@ -1,0 +1,172 @@
+<div class="pt-6"></div>
+<footer class="d-flex pb-5 pt-6 pt-md-7 border-top border-light bg-primary">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <p>
+          <strong>Hey I'am Nishikanta Ray</strong> Thank You for taking the time
+          to view my Portfolio 😄. Have a good day.
+        </p>
+        <ul class="d-flex list-unstyled mb-5 mb-lg-0">
+          <li class="mr-2">
+            <button
+              class="btn btn-icon-only btn-pill btn-twitter mr-3"
+              type="button"
+              aria-label="youtube button"
+              title="youtube button"
+              onclick="location.href = 'https://twitter.com/NishikantaRay5';"
+            >
+              <span aria-hidden="true" class="fab fa-twitter"></span>
+            </button>
+          </li>
+          <li class="mr-2">
+            <button
+              class="btn btn-icon-only btn-pill btn-github mr-3"
+              type="button"
+              aria-label="youtube button"
+              title="youtube button"
+              onclick="location.href = 'https://github.com/NishikantaRay';"
+            >
+              <span aria-hidden="true" class="fab fa-github"></span>
+            </button>
+          </li>
+          <li class="mr-2">
+            <button
+              class="btn btn-icon-only btn-pill btn-linkedin mr-3"
+              type="button"
+              aria-label="youtube button"
+              title="youtube button"
+              onclick="location.href = 'https://www.linkedin.com/in/nishikanta-ray-7786a0196/';"
+            >
+              <span aria-hidden="true" class="fab fa-linkedin"></span>
+            </button>
+          </li>
+          <li>
+            <button
+              class="btn btn-icon-only btn-pill btn-youtube mr-3"
+              type="button"
+              aria-label="youtube button"
+              title="youtube button"
+              onclick="location.href = 'https://www.youtube.com/channel/UCDXj9OJ3P0_bvwRetEENp9g/featured';"
+            >
+              <span aria-hidden="true" class="fab fa-youtube"></span>
+            </button>
+          </li>
+          <li>
+            <button
+              class="btn btn-icon-only btn-pill btn-instagram mr-3"
+              type="button"
+              aria-label="youtube button"
+              title="youtube button"
+              onclick="location.href = 'https://instagram.com/nishikant.ray.16?utm_medium=copy_link';"
+            >
+              <span aria-hidden="true" class="fab fa-instagram"></span>
+            </button>
+          </li>
+          <li>
+            <button
+              class="btn btn-icon-only btn-pill btn-facebook mr-3"
+              type="button"
+              aria-label="youtube button"
+              title="youtube button"
+              onclick="location.href = 'https://www.facebook.com/nishikant.ray.16';"
+            >
+              <span aria-hidden="true" class="fab fa-facebook"></span>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 col-lg-4 mb-5 mb-lg-0">
+        <div class="text-center">
+          <a href="https://nishikantaray.github.io/studytub/">
+            <div
+              class="
+                icon icon-shape
+                shadow-soft
+                border border-light
+                rounded-circle
+              "
+            >
+              <img
+                src="https://nishikantaray.github.io/studytub/img/core-img/nanda.png"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <h3 class="h3 my-3">Study Tub</h3>
+            <span>Your One-Stop for all the Notes.</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-4 mb-5 mb-lg-0">
+        <h5>Subscribe</h5>
+        <p class="text-gray font-small mt-2">
+          Join our mailing list. We write rarely, but only the best content.
+        </p>
+        <form [formGroup]="mailForm" (ngSubmit)="onSubmit()">
+          <div class="form-row mb-2">
+            <div class="col-12">
+              <label
+                class="h6 font-weight-normal d-none"
+                for="exampleInputEmail3"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control mb-2"
+                placeholder="example@company.com"
+                name="email"
+                aria-label="Subscribe form"
+                id="mail"
+                formControlName="mail"
+                [ngClass]="{
+                  'is-invalid':
+                    mailForm.get('mail')!.touched &&
+                    mailForm.get('mail')!.invalid
+                }"
+              />
+              <div *ngIf="f.mail.touched && f.mail.invalid">
+                <small class="text-danger" *ngIf="f.mail.errors?.required">
+                  Mail is required!
+                </small>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <button
+                type="submit"
+                class="btn btn-primary btn-block"
+                data-loading-text="Sending"
+                [disabled]="mailForm.invalid"
+              >
+                <span>Subscribe</span>
+              </button>
+            </div>
+          </div>
+        </form>
+        <p class="text-gray font-small m-0">
+          We’ll never share your details. See our
+          <a class="text-black" href="#">Privacy Policy</a>
+        </p>
+      </div>
+    </div>
+    <hr class="my-5" />
+    <div class="row">
+      <div class="col">
+        <a href="#" target="_blank" class="d-flex justify-content-center">
+          <h3 style="font-family: cursive">NR</h3>
+        </a>
+        <div
+          class="d-flex text-center justify-content-center align-items-center"
+          role="contentinfo"
+        >
+          <p class="font-weight-normal font-small mb-0">
+            Copyright © Nishikantaray <span class="current-year">2020</span>.
+            All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

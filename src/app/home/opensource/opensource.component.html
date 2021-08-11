@@ -1,0 +1,16 @@
+<div class="container justify-content-center">
+    <div class="mx-auto mt-5 mb-5 text-center" style="width: 300px; height: 50px">
+        <h4 style="font-family: cursive">&nbsp;Open source contribution</h4>
+    </div>
+    <div class="row">
+        <div class="col-6 col-sm-6 col-lg-2 mb-5 mb-lg-0" *ngFor="let user of arrproject;">
+            <div class="text-center">
+                <div class="icon icon-shape shadow-soft border border-light ">
+                    <img src="{{user.url}}" alt="" srcset="">
+                </div>
+                <h3 class="h5 my-3">{{user.name}}</h3>
+            </div>
+        </div>
+        
+    </div>
+</div>

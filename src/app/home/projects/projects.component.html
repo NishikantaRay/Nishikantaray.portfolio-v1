@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="mx-auto mt-5 text-center" style="width: 300px; height: 50px">
+        <h4 style="font-family: cursive">&nbsp;Projects and cool stuff</h4>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-3 mt-5 mb-5" *ngFor="let user of arrproject;">
+            <div class="card bg-primary border-light shadow-soft">
+                <img src="{{user.image}}" class="card-img-top rounded-top" alt="Themesberg office">
+                <div class="card-body">
+                    <span class="h6 icon-tertiary small"><span class="fas fa-medal mr-2"></span>{{user.name}}</span>
+                    <p class="card-text">{{user.details}}</p>
+                    <a href="{{user.url}}" class="btn btn-primary btn-sm">Click here</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

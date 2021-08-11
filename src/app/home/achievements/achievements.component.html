@@ -1,0 +1,32 @@
+<div class="container pt-3">
+  <div class="mx-auto mb-5 mt-5 text-center achieve">
+    <h4>&nbsp;{{name}}</h4>
+  </div>
+  <div class="justify-content-center">
+    <div class="col-12 col-md-12 mb-3" *ngFor="let user of arrproject">
+      <div class="card bg-primary pl-2 pr-2 border-light shadow-soft">
+        <div class="row">
+          <div class="col-md-6 pt-4">
+            <img
+              src="{{ user.img }}"
+              class="card-img-top rounded"
+              alt="Themesberg office"
+            />
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h3 class="h5 card-title">{{ user.name }}</h3>
+              <p class="card-text">
+                {{ user.details }}
+              </p>
+              <a href="{{ user.link }}" class="btn btn-primary btn-sm"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-swags></app-swags>

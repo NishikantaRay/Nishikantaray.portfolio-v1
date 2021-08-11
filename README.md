@@ -1,5 +1,7 @@
-# MyApp
-
+# Portfolio
+![Alt Text](https://github.com/NishikantaRay/os-portfolio/blob/main/@themesberg%20Neumorphism%20ui.gif?raw=true)
+[![Watch the video]![image](https://pbs.twimg.com/media/E66sM50VgAIxQWK?format=jpg&name=900x900)
+(https://youtu.be/5JcEAhIrgUM)
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.2.
 
 ## Development server

@@ -1,9 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "382b65c7-a92e-41d9-a76d-68853b29cdf7"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "my-app": {
+    "portfolio": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,19 +20,40 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/my-app",
+            "outputPath": "dist/portfolio",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/nishikanta.jpeg"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/dist/css/neumorphism.css",
+              "src/assets/dist/vendor/@fortawesome/fontawesome-free/css/all.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/dist/neumorphism.js",
+              "src/assets/dist/vendor/prismjs/prism.js",
+              "src/assets/dist/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js",
+              "src/assets/dist/vendor/jquery-countdown/dist/jquery.countdown.min.js",
+              "src/assets/dist/vendor/jquery.counterup/jquery.counterup.min.js",
+              "src/assets/dist/vendor/jarallax/dist/jarallax.min.js",
+              "src/assets/dist/vendor/waypoints/lib/jquery.waypoints.min.js",
+              "src/assets/dist/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js",
+              "src/assets/dist/vendor/nouislider/distribute/nouislider.min.js",
+              "src/assets/dist/vendor/onscreen/dist/on-screen.umd.min.js",
+              "src/assets/dist/vendor/headroom.js/dist/headroom.min.js",
+              "src/assets/dist/assets/horizontal.js",
+              "src/assets/dist/custom.js",
+              "node_modules/particles.js/particles.js",
+              "node_modules/jquery/dist/jquery.min.js"
+              
+              
+            ]
           },
           "configurations": {
             "production": {
@@ -68,10 +92,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "my-app:build:production"
+              "browserTarget": "portfolio:build:production"
             },
             "development": {
-              "browserTarget": "my-app:build:development"
+              "browserTarget": "portfolio:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +103,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "my-app:build"
+            "browserTarget": "portfolio:build"
           }
         },
         "test": {
@@ -91,16 +115,32 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/nishikanta.jpeg"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/dist/css/neumorphism.css"
+              
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/dist/neumorphism.js",
+              "src/assets/dist/vendor/prismjs/prism.js",
+              "src/assets/dist/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js",
+              "src/assets/dist/vendor/jquery-countdown/dist/jquery.countdown.min.js",
+              "src/assets/dist/vendor/jquery.counterup/jquery.counterup.min.js",
+              "src/assets/dist/vendor/jarallax/dist/jarallax.min.js",
+              "src/assets/dist/vendor/waypoints/lib/jquery.waypoints.min.js",
+              "src/assets/dist/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js",
+              "src/assets/dist/vendor/nouislider/distribute/nouislider.min.js",
+              "src/assets/dist/vendor/onscreen/dist/on-screen.umd.min.js",
+              "src/assets/dist/vendor/headroom.js/dist/headroom.min.js"
+              
+            ]
           }
         }
       }
     }
   },
-  "defaultProject": "my-app"
+  "defaultProject": "portfolio"
 }

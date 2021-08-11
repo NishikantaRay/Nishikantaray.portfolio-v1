@@ -1,0 +1,38 @@
+<div class="mx-auto mt-5 text-center achieve">
+  <h4>&nbsp;Education</h4>
+</div>
+<div class="timeline">
+  <ul>
+    <li *ngFor="let user of eduarray">
+      <div class="row">
+        <div class="col-12 col-md-10">
+          <div
+            class="card bg-primary shadow-inset text-center border-light p-3"
+          >
+            <div class="card-body shadow-soft rounded border border-light py-5">
+              <div class="text-center">
+                <div
+                  class="
+                    icon icon-shape
+                    shadow-soft
+                    border border-light
+                    rounded-circle
+                  "
+                >
+                  <span class="fas fa-university"></span>
+                </div>
+                <h3 class="h5 my-3">
+                  {{ user.name }}
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="time">
+        <h4>{{ user.year }}</h4>
+      </div>
+    </li>
+    <div style="clear: both"></div>
+  </ul>
+</div>

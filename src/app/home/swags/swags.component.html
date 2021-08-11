@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="mx-auto mt-5 text-center" style="width: 300px; height: 50px">
+      <h4 style="font-family: cursive">&nbsp;Swags and perks</h4>
+    </div>
+    <div class="row">
+      <div class="col-md-12 mt-5">
+        <div style="display: inline-block; width: 100%; overflow-y: auto">
+          <ul class="timeline timeline-horizontal" >
+              <li class="timeline-item" *ngFor="let user of arrproject;">
+                <div class="timeline-panel">
+                  <div class="col-12 col-md-12">
+                      <div class="card bg-primary border-light shadow-soft">
+                          <img src="{{user.url}}" class="card-img-top rounded-top" alt="Themesberg office">
+                          <div class="card-body">
+                              <span class="h6 icon-tertiary small"><span class="fas fa-medal mr-2"></span>Awards</span>
+                              <h3 class="h5 card-title mt-3">{{user.name}}</h3>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
