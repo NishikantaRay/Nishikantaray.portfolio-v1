@@ -1,28 +1,12 @@
-name: Github Pages Deploy
-
-on:
-  push:
-    branches:
-      - "main"
-
+name: learn-github-actions
+on: [push]
 jobs:
-  build:
+  check-bats-version:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [14.17]
-    
     steps:
-      - name: Checkout
-        uses: actions/checkout@v1
-
-      - name: Install and build
-        working-directory: ./demo
-        run: npm install && npm run gh-build 
-      
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.1
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
         with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: demo/dist # The folder the action should deploy.
+          node-version: '14'
+      - run: npm install -g bats
+      - run: bats -v
