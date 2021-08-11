@@ -49,7 +49,7 @@
               "src/assets/dist/vendor/headroom.js/dist/headroom.min.js",
               "src/assets/dist/assets/horizontal.js",
               "src/assets/dist/custom.js",
-              "node_modules/particles.js/particles.js",
+              "src/assets/dist/particles.js",
               "node_modules/jquery/dist/jquery.min.js"
               
               
