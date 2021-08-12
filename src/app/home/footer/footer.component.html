@@ -2,8 +2,8 @@
 <footer class="d-flex pb-5 pt-6 pt-md-7 border-top border-light bg-primary">
   <div class="container">
     <div class="row">
-      <div class="col-lg-4">
-        <p>
+      <div class="col-lg-4" data-aos-duration="3000" data-aos="fade-right">
+        <p data-aos-duration="3000">
           <strong>Hey I'am Nishikanta Ray</strong> Thank You for taking the time
           to view my Portfolio 😄. Have a good day.
         </p>
@@ -99,7 +99,11 @@
         </div>
       </div>
 
-      <div class="col-12 col-lg-4 mb-5 mb-lg-0">
+      <div
+        class="col-12 col-lg-4 mb-5 mb-lg-0"
+        data-aos-duration="3000"
+        data-aos="fade-left"
+      >
         <h5>Subscribe</h5>
         <p class="text-gray font-small mt-2">
           Join our mailing list. We write rarely, but only the best content.
@@ -112,6 +116,8 @@
                 for="exampleInputEmail3"
                 >Email address</label
               >
+              <div [class]="isError?'alert alert-danger':'d-none'">{{message}}</div>
+            <div [class]="isSuccess?'alert alert-success':'d-none'">{{message}}</div>
               <input
                 type="email"
                 class="form-control mb-2"
@@ -119,15 +125,15 @@
                 name="email"
                 aria-label="Subscribe form"
                 id="mail"
-                formControlName="mail"
+                formControlName="email"
                 [ngClass]="{
                   'is-invalid':
-                    mailForm.get('mail')!.touched &&
-                    mailForm.get('mail')!.invalid
+                    mailForm.get('email')!.touched &&
+                    mailForm.get('email')!.invalid
                 }"
               />
-              <div *ngIf="f.mail.touched && f.mail.invalid">
-                <small class="text-danger" *ngIf="f.mail.errors?.required">
+              <div *ngIf="f.email.touched && f.email.invalid">
+                <small class="text-danger" *ngIf="f.email.errors?.required">
                   Mail is required!
                 </small>
               </div>
@@ -145,6 +151,44 @@
             </div>
           </div>
         </form>
+        <!-- <form #regForm="ngForm"  (ngSubmit)="onSubmit()">
+          <div class="form-row mb-2">
+            <div class="col-12">
+              <label
+                class="h6 font-weight-normal d-none"
+                for="exampleInputEmail3"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control mb-2"
+                placeholder="example@company.com"
+                name="email"
+                aria-label="Subscribe form"
+                id="mail"
+                #myname="ngModel" [(ngModel)]="userin.email"  [class.is-invalid]="myname.errors&&myname.touched"
+              />
+              <div *ngIf="myname.errors&&myname.touched">
+                <div class="text-danger" *ngIf="myname.errors.required">Email is required</div>
+            </div>
+              <div *ngIf="f.mail.touched && f.mail.invalid">
+                <small class="text-danger" *ngIf="f.mail.errors?.required">
+                  Mail is required!
+                </small>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <button
+                type="submit"
+                class="btn btn-primary btn-block"
+                data-loading-text="Sending" [disabled]="regForm.invalid"
+              >
+                <span>Subscribe</span>
+              </button>
+            </div>
+          </div>
+        </form> -->
         <p class="text-gray font-small m-0">
           We’ll never share your details. See our
           <a class="text-black" href="#">Privacy Policy</a>

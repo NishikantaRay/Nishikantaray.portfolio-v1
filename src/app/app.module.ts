@@ -19,7 +19,7 @@ import { SkillComponent } from './home/skill/skill.component';
 import { HackathonComponent } from './home/hackathon/hackathon.component';
 import { OpensourceComponent } from './home/opensource/opensource.component';
 import { SwagsComponent } from './home/swags/swags.component';
-
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -45,6 +45,7 @@ import { SwagsComponent } from './home/swags/swags.component';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    HttpClientModule,
     FormsModule
   ],
   providers: [],

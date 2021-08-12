@@ -1,18 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl,Validators,FormBuilder } from '@angular/forms';
+import { ContactpageService } from 'src/app/contactpage.service';
+import { Feed } from 'src/app/feed';
+
 @Component({
   selector: 'app-contactus-page',
   templateUrl: './contactus-page.component.html',
   styleUrls: ['./contactus-page.component.css']
 })
 export class ContactusPageComponent implements OnInit {
-  
-  
-  onSubmit() {
-    // TODO: Use EventEmitter with form value
-    console.warn(this.profileForm.value);
-  }
-  constructor() { }
+  public message!:string;
+  public isError:boolean=false;
+  public isSuccess:boolean=false;
+  constructor(private _userService:ContactpageService) { }
   
   profileForm!: FormGroup;
  
@@ -23,7 +23,7 @@ export class ContactusPageComponent implements OnInit {
         Validators.required,
         Validators.minLength(4)
       ]),
-      mail: new FormControl('',[
+      email: new FormControl('',[
         Validators.required,
         Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$')]
       ),
@@ -36,5 +36,18 @@ export class ContactusPageComponent implements OnInit {
   get f()
   {
       return this.profileForm.controls;
+  }
+  onSubmit() {
+    this._userService.registerfeed(this.profileForm.value).subscribe(Response=>{
+      console.log(Response);
+      this.message=Response.message;
+      this.isSuccess=true;
+      this.isError=false;
+      },err=>{
+        console.log(err);
+        this.message=err.error.message;
+        this.isSuccess=false;
+        this.isError=true;
+    })
   }
 }
