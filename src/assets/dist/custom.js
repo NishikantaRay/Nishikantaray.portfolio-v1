@@ -1,3 +1,3 @@
-AOS.init({
-    duration: 900,
-})
+// AOS.init({
+//     duration: 900,
+// })
