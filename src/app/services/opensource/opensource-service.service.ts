@@ -29,6 +29,14 @@ export class OpensourceServiceService {
       {
         "url":"https://pbs.twimg.com/profile_images/1119517021064925184/wJP49tZ7_400x400.png",
         "name":"GirlScript"
+      },
+      {
+        "url":"https://avatars.githubusercontent.com/u/88736289?s=200&v=4",
+        "name":"Opentek"
+      },
+      {
+        "url":"https://avatars.githubusercontent.com/u/69400678?s=200&v=4",
+        "name":"Devincept"
       }
   
     ];

@@ -1,0 +1,18 @@
+<div class="container  pt-5 mt-5">
+    <div class="mx-auto mt-2 text-center" style="width: 300px; height: 50px">
+        <h4 data-aos="fade-down">&nbsp; Youtube</h4>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-4" *ngFor="let user of title;">
+            <div class="card bg-primary shadow-inset text-center border-light p-3">
+                <div class="card-body shadow-soft rounded border border-light py-5">
+                    <a href="https://www.youtube.com/embed/{{user.id}}?autoplay=1">
+                        <img id="ytimg" height="100%" width="100%" src="https://img.youtube.com/vi/{{user.id}}/hqdefault.jpg" alt="ytvideo">
+                        <div class=" text-center" >
+                        <span id="butt"><img src="https://img.icons8.com/color/48/000000/youtube-play.png"/></span></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -6,6 +6,30 @@ import { Injectable } from '@angular/core';
 export class ProjectsServiceService {
   getData(){
    const arrproject:any =[
+    {
+      "image":"https://github.com/NishikantaRay/DeveloperDays/raw/main/image/p1.gif",
+      "name":"React portfolio",
+      "details":"Built it using react",
+      "url":"https://github.com/NishikantaRay/DeveloperDays"
+    },
+    {
+      "image":"https://github.com/NishikantaRay/DeveloperDays/raw/main/image/p2.gif",
+      "name":"Calculator",
+      "details":"Built it using Html,css and js",
+      "url":"https://github.com/NishikantaRay/DeveloperDays"
+    },
+    {
+      "image":"https://camo.githubusercontent.com/cf7c1185e8ed436b2750e5f3030dbddc26acb879140de625a21b80336e90b273/68747470733a2f2f6368616c6c656e6765706f73742d73332d6368616c6c656e6765706f73742e6e6574646e612d73736c2e636f6d2f70686f746f732f70726f64756374696f6e2f736f6674776172655f70686f746f732f3030312f3633382f3832332f64617461732f67616c6c6572792e6a7067",
+      "name":"LootMagnet-A savings hub",
+      "details":"built it using angular, Twilio API, node.js and cockroachDB",
+      "url":"https://github.com/NishikantaRay/Lootmagnet"
+    },
+    {
+      "image":"https://camo.githubusercontent.com/889f9d29c56462a22df180eeea137177bf6f800abe16fa6095559c0d9789e615/68747470733a2f2f692e706f7374696d672e63632f714d7054724c70642f312e706e67",
+      "name":"Organization website",
+      "details":"Organization website using web tech",
+      "url":"https://github.com/Opentek-Org/opentek"
+    },
       {
         "image":"https://raw.githubusercontent.com/NishikantaRay/URL-Shortener/main/url.gif",
         "name":" URL Shortener",

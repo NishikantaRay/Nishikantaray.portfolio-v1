@@ -20,6 +20,8 @@ import { HackathonComponent } from './home/hackathon/hackathon.component';
 import { OpensourceComponent } from './home/opensource/opensource.component';
 import { SwagsComponent } from './home/swags/swags.component';
 import {HttpClientModule} from '@angular/common/http';
+import { YoutubeComponent } from './home/youtube/youtube.component';
+import { BlogComponent } from './home/blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +42,8 @@ import {HttpClientModule} from '@angular/common/http';
     HackathonComponent,
     OpensourceComponent,
     SwagsComponent,
+    YoutubeComponent,
+    BlogComponent,
   ],
   imports: [
     BrowserModule,
