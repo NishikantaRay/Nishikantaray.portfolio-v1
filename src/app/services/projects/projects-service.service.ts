@@ -7,6 +7,18 @@ export class ProjectsServiceService {
   getData(){
    const arrproject:any =[
     {
+      "image":"https://raw.githubusercontent.com/NishikantaRay/Bootstrap-projects/main/image-port/p1.png",
+      "name":"Freelancing project 4",
+      "details":"Built it using Web technology",
+      "url":"https://nishikantaray.me/Sabyasachi/"
+    },
+    {
+      "image":"https://raw.githubusercontent.com/NishikantaRay/Bootstrap-projects/main/image-port/p2.png",
+      "name":"Home rental system",
+      "details":"Built it using Angular,Node and Sawolabsapi",
+      "url":"https://github.com/NishikantaRay/Home-Rental-System"
+    },
+    {
       "image":"https://github.com/NishikantaRay/DeveloperDays/raw/main/image/p1.gif",
       "name":"React portfolio",
       "details":"Built it using react",
