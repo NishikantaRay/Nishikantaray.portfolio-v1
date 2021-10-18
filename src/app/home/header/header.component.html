@@ -107,4 +107,37 @@
     </button>
   </div>
 </div>
+<div class="container ">
+  <div class="mx-auto mt-5 mb-5 text-center" style="width: 300px; height: 50px">
+    <h4 class="pt-5" >
+      &nbsp;Projects
+    </h4>
+  </div>
+  <div class="row">
+    <div
+      class="col-12 col-md-4 mt-5 mb-5"
+      *ngFor="let user of arrproject"
+      data-aos-duration="3000"
+      data-aos="fade-right"
+    >
+      <div class="card bg-primary border-light shadow-soft">
+        <img
+          src="{{ user.image }}"
+          class="card-img-top rounded-top"
+          alt="Themesberg office"
+        />
+        <div class="card-body">
+          <span class="h6 icon-tertiary small"
+            >{{ user.name }}</span
+          >
+          <p class="card-text">{{ user.details }}</p>
+          <a href="{{ user.url }}" class="btn btn-primary btn-sm">Live demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="text-center">
+  <button routerLink="/project" class="btn btn-primary text-secondary mr-2 mb-2" type="button">More details</button>
+</div>
 <app-contactus-page></app-contactus-page>
