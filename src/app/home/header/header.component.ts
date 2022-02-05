@@ -12,12 +12,12 @@ export class HeaderComponent implements OnInit {
     {
       "image":"https://nishikanta.hashnode.dev/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1629997982424%2FBQCotkP6zI.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=3840&q=75",
       "name":"StudyTub-One stop for all the notes",
-      "details":"The website contains around 20GB of study materials and question papers for B tech students. It has crossed 2k+ unique users,200GB of data served and 200k+ requests within a year of launch. Tech Stack: Cloudflare worker, Html5, CSS3, Javascript, and Bootstrap 4.",
+      "details":"The website contains around 20GB of study materials and question papers for B tech students. It has crossed 3.03k+ unique users,200GB of data served and 200k+ requests within a year of launch. Tech Stack: Cloudflare worker, Html5, CSS3, Javascript, and Bootstrap 4.",
       "url":"https://nishikantaray.me/studytub/"
     },
     {
       "image":"https://github.com/NishikantaRay/DeveloperDays/raw/main/image/p1.gif",
-      "name":"Neumorphism Portfolio",
+      "name":"Personal Portfolio",
       "details":" A website that showcases my work, qualifications, education, training and experiences.    Tech Stack:Html5, Css3, Bootstrap4, Angular, NodeJS, Express, MongoDB, Heroku, and Github-Action.",
       "url":"https://nishikantaray.me/"
     },{
